@@ -1,19 +1,19 @@
-import pandas as pd
+import pandas as Edd
 # Reading the csv to the  code
-df=pd.read_csv('AAPL.csv')
-# shows the top and tail for bottom rows of the data
+df=Edd.read_csv('candle_clean_data.csv')
 df.head()
 df.tail()
 df1=df.reset_index()['close']
-return df1
+df1
 
 
 import matplotlib.pyplot as plt
 import numpy as np
-# ploting the close as a chart with Matplot
+# Ndoplotter in mat by 
+# visual with .ipynb
 plt.plot(df1)
 
-# NOTE: LSTM are very sensative to the scale of the data. So use 
+# 
 # MixMax scaler
 from sklearn.preprocessing import MinMaxScaler
 scaler=MinMaxScaler(feature_range=(0,1))
